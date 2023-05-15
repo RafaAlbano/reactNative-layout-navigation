@@ -12,8 +12,8 @@ const loginApi = new LoginApi();
 export default function LoginScreen() {
   const setUser = useSetRecoilState(userState);
 
-  const [username, setUsername] = React.useState('');
-  const [password, setPassword] = React.useState('');
+  const [username, setUsername] = React.useState('admin');
+  const [password, setPassword] = React.useState('admin');
   const [errorMsg, setErrorMsg] = React.useState(null);
 
   const login = async () => {
